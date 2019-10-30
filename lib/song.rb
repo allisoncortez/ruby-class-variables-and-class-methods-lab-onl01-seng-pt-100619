@@ -64,17 +64,17 @@ class Song
     #iterate over the @@artists array
     @@artists.each do |artist| 
       
-      if genre_hash[genre]
-        genre_hash[genre] +=1 
+      if artist_hash[artist]
+        artist_hash[artist] +=1 
       else
         #populate a hash with the key/value pairs
-        genre_hash[genre] = 1
+        artist_hash[artist] = 1
       end
       
     end
     
     #return the new hash with the new organized info
-  genre_hash
+  artist_hash
   end
   
 end
